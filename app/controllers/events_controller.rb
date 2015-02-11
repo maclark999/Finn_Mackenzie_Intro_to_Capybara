@@ -37,7 +37,7 @@ class EventsController < ApplicationController
   def destroy
     @event = Event.find(params[:id])
     @event.destroy
-    redirect_to location_path, :notice => 'Location was successfully destroyed.'
+    redirect_to location_path, :notice => 'Event was successfully destroyed.'
   end
 
   def event_params
